@@ -2,87 +2,55 @@
 
 Sistema para pré-catalogar livros de literatura inglesa, americana e brasileira. Este software foi construído inicial mente para a biblioteca Mário Quintana de Alegrete, onde através dele é possível pré-catalogar fichas catalográficas e exportá-las em formato marc21. Os arquivos exportados podem ser importados no BibLivre através da opção de importação contida no Biblivre.
 
-## Começando
+## Screenshots do sistema
 
-Para contribuir com este projeto, basta fazer o download 
+Tela Principal
+![](bibpampa-api/src/main/resources/img/tela-principal.png)
+Tela Guia
+![](bibpampa-api/src/main/resources/img/guia1.png)
+Tela Guia (campos)
+![](bibpampa-api/src/main/resources/img/guia2.png)
+Tela Login
+![](bibpampa-api/src/main/resources/img/login.png)
+Tela Revisões
+![](bibpampa-api/src/main/resources/img/revisoes.png)
 
-### Pré-requisitos
+### Começando
 
-What things you need to install the software and how to install them
+O Bibpampa é dividido em dois projeto. O *backend*, construído com Spring Boot, e o *front* com Angular, primeng e bootstrap.
 
-```
-Give examples
-```
+Para contribuir com o *backend* deste projeto, siga os seguintes passos:
 
-### Installing
+1. Baixar este projeto;
+2. Abrir o projeto no Netbeans 10.0;
+3. Aguardar o maven baixar todas as dependências;
+4. Trabalhar no projeto.
 
-A step by step series of examples that tell you how to get a development env running
+Para contribuir com o *frontend* deste projeto, siga os seguintes passos:
 
-Say what the step will be
+1. Baixar o projeto do [Google Drive](https://drive.google.com/open?id=1uYd6aYooSuTre0Onq11C30HUdgoWRg4w);
+2. Abrir o projeto em um editor de preferência (recomendo o Visual Studio Code);
+3. Baixar dependências do node, primeng, bootstrap no angular cli;
+4 Trabalhar no projeto.
 
-```
-Give the example
-```
 
-And repeat
+Se algum projeto não funcionar, uma opção é buscar tutorias sobre como rodar projetos em tais tecnologias. Ou criar uma issue.
 
-```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Deploy das Aplicações
 
-## Running the tests
+para realizar deploy das aplicações, deve-se gerar o build do backend no netbeans, e o build do front no visual studio code (foi a ide que eu usei para o front).
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Após os builds terem sido gerados, deve se colocar os dois builds na pasta webapp do tomcat. o tomcat que eu usei foi o 8.5, rodando na porta 8090. Ambos os projetos já estão configurados para rodar nessa porta.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Netbeans](https://netbeans.apache.org/download/nb100/nb100.html) - IDE para programar o *backend*
+* [Visual Studio Code](https://code.visualstudio.com) - IDE para programar o *frontend*
+* [Tomcat](https://tomcat.apache.org/download-80.cgi) - Servidor da aplicação
+* [MySql](https://dev.mysql.com/downloads/installer/) - Gerenciador de banco de dados
+* [Spring Boot](https://spring.io/projects/spring-boot) - Projeto para criar APIs em java
+* [Angular](https://angular.io) - Framework javascript para criação de aplicações web, mobile e desktop
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
