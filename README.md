@@ -37,13 +37,13 @@ Para contribuir com o *frontend* deste projeto, siga os seguintes passos:
 Se algum projeto não funcionar, uma opção é buscar tutorias sobre como rodar projetos em tais tecnologias. Ou criar uma issue.
 
 
-## Deploy das Aplicações
+## Deploy da Aplicação
 
 para realizar deploy das aplicações, deve-se gerar o build do backend no netbeans, e o build do front no visual studio code (foi a ide que eu usei para o front).
 
 Após os builds terem sido gerados, deve se colocar os dois builds na pasta webapp do tomcat. o tomcat que eu usei foi o 8.5, rodando na porta 8090. Ambos os projetos já estão configurados para rodar nessa porta.
 
-## Built With
+## Construído com
 
 * [Netbeans](https://netbeans.apache.org/download/nb100/nb100.html) - IDE para programar o *backend*
 * [Visual Studio Code](https://code.visualstudio.com) - IDE para programar o *frontend*
